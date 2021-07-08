@@ -1,0 +1,91 @@
+*{
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-y: hidden;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    height: 80vh ;
+  /*  margin: 0 2px;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.hero, .content, .sidebar{
+    width: 100%;
+}
+.hero{
+    background-color: tomato;
+    height:25%;
+}
+.central-container{
+    height: 73%;
+}
+.content{
+    background-color: green;
+    height: 60%;
+    margin-top: 5px;
+    
+    
+}
+.sidebar{
+    background-color: indigo;
+    height: 40%;
+    margin-top: 5px;
+    
+    
+}
+.footer{
+    background-color: grey;
+    margin-top: 5px;
+    
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: cadetblue;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+}
+
+/*****************  MEDIA QUERIES *****************/
+@media screen and (min-width: 768px) {
+    .central-container{
+        display: flex;
+        flex-direction: row;
+        height: 74.5%;
+    }
+    .content, .sidebar{
+        height: 100%;
+    }
+    .content{
+        margin-right: 5px;
+    }
+
+}
+@media screen and (min-width: 1024px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+    .container{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .content{
+        width: 60%;
+    }
+    .sidebar{
+        width: 40%;
+    }
+}
